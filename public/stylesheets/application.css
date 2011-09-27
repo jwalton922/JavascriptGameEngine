@@ -1,0 +1,119 @@
+/* 
+    Document   : application
+    Created on : Apr 3, 2011, 4:16:07 PM
+    Author     : Josh
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+/* world editor stuff
+-------------------------------------------------------------------------- */
+#editor_side_panel {
+    float: left;
+    width: 350px;
+    height: 800px;
+    border: solid 1px black;
+    display: inline;
+}
+
+#editor_world_panel {
+    display: inline;
+    float: left;
+    width: 700px;
+    height: 800px;
+}
+/* map stuff
+-------------------------------------------------------------------------- */
+.map_holder {
+    display: inline;
+    float: left;
+    width: 800px;
+    height: 800px;
+    overflow: auto;
+}
+
+.map_table {
+    empty-cells: show;
+    overflow: auto;
+    border-collapse: collapse;
+    width: 10000px;
+    height: 10000px;
+}
+
+.map_cell {
+    border: black solid 1px;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    text-align:  center;
+}
+
+.selected_map_cell {
+    border:  yellow solid 1px;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    text-align:  center;
+}
+
+.unit_image {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/* game info
+-------------------------------------------------------------------------- */
+.game_info {
+    display: inline;
+    float: left;
+    border: black solid 1px;
+    width: 250px;
+    height: 800px;
+    background-color: transparent;
+}
+
+.resource_table {
+    
+}
+
+.lumber_row {
+    color: maroon;
+}
+
+.gold_row {
+    color: gold;
+}
+
+.iron_row {
+    color: black;
+}
+
+.test_selected {
+    width:128px;
+    height:128px;
+    border: solid 1px black;
+    background-image: url(http://localhost:3000/images/world_images/trees/trees.png);
+    background-position: 0px 0px;
+}
+
+.treeImageClass {
+    position: absolute;
+    left:400px;
+    top:400px;
+    width:128px;
+    height:128px;
+    border: solid 1px aqua;
+    clip: rect(64px, 64px, 256px, 256px);
+    overflow: hidden;
+}

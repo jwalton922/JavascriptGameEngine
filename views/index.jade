@@ -1,0 +1,36 @@
+form(action="/users/login", method="post")
+  label Username:
+  input(type="text", name='user[username]')
+  br
+  label Password:
+  input(type="password", name='user[password]')
+  br
+  input(type="submit", value='Login')
+
+
+h1 Sign up!
+form(action="/users/signup", method="post")
+  label Username:
+  input(type="text", name='user[username]')
+  br
+  label Password:
+  input(type="text", name='user[password1]')
+  br
+  label Retype Password:
+  input(type="text", name='user[password2]')
+  br
+  label Class:
+  br
+  label Knight
+  input(type="radio", name="user[pcclass]", value='Knight', checked)
+  label Wizard
+  input(type="radio", name='user[pcclass]', value='Wizard')
+  br
+  input(type="submit", value='Create Account')
+
+
+
+
+
+
+

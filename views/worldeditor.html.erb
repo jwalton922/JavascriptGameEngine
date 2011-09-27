@@ -1,0 +1,27 @@
+<body onload="initWorldEditor('object_selector_canvas');">
+<%= javascript_include_tag "gametest"  %>
+<%= javascript_include_tag "sprite"  %>
+<%= javascript_include_tag "gameengine"  %>
+<%= javascript_include_tag "game_engine_classes" %>
+<%= javascript_include_tag "worldeditor" %>
+<%= javascript_include_tag "jquery-1.5.1.min" %>
+<%= javascript_include_tag "jquery-ui-1.8.12.custom.min" %>
+  <div>
+    
+    <div id="editor_world_panel">
+      <canvas onclick="processMouseClickWorldCanvas(event);"  onmousemove="mouseMoved(event);" id="canvas" width="700" height="800" style="border: solid 1px black;"></canvas>
+    </div>
+    <div id="editor_side_panel">
+      <select id="object_selector" onchange="updateSelectorCanvas();">
+        <option value="Tiles 1">Tiles 1</option>
+        <option value="Tiles 2">Tiles 2</option>
+        <option value="Tiles 3">Tiles 3</option>
+        <option value="Tiles 4">Tiles 4</option>
+        <option value="Trees">Trees</option>
+      </select>
+      <canvas id="object_selector_canvas" width="350" height="800" style="border: solid 1px blue" onclick="processSelectorMouseClick(event);"></canvas>
+    </div>
+  </div>
+  <!--<div id="objectToPlace" class="test_selected"></div>
+  <div id="objectToPlace2" class="test_selected2" style ="width:64px;height:64px;border:solid 1px blue;"><%= image_tag "world_images/trees/trees.png", {:id => 'treeImage', :class => 'treeImageClass'} %></div>-->
+</body>

@@ -1,0 +1,13 @@
+body(onload='load();' onkeypress='processKeyPress(event);')
+  script (type='text/javascript' src='/public/javascripts/gametest')
+  script (type='text/javascript' src='/public/javascripts/sprite')
+  script (type='text/javascript' src='/public/javascripts/gameengine')
+  script (type='text/javascript' src='/public/javascripts/gametest')
+
+  div
+    canvas(id='canvas' width='500' height='500' onclick='processClick(event);' style="border: solid 1px black;")
+  button(onclick='start();')
+  br
+  div(id='preloadedimages')
+    canvas(id='preloadedcanvas' width='400' height='400' style='border: black solid 1px;')
+
